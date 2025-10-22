@@ -4,7 +4,7 @@
   "description": "Beautiful UI components for Expo React Native - Install with CLI like shadcn/ui",
   "main": "dist/index.js",
   "bin": {
-    "flowerui": "dist/cli.js"
+    "flowerui": "./dist/cli.js"
   },
   "files": [
     "dist",
