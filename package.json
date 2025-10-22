@@ -1,0 +1,59 @@
+{
+  "name": "flowerui",
+  "version": "0.1.0",
+  "description": "Beautiful UI components for Expo React Native - Install with CLI like shadcn/ui",
+  "main": "dist/index.js",
+  "bin": {
+    "flowerui": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "components"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "node dist/cli.js add bottom-sheet"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "ui",
+    "components",
+    "cli",
+    "shadcn",
+    "bottom-sheet"
+  ],
+  "author": "poovarasan4046",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poovarasan4046/flowerui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poovarasan4046/flowerui/issues"
+  },
+  "homepage": "https://github.com/poovarasan4046/flowerui#readme",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "ora": "^8.0.1",
+    "chalk": "^5.3.0",
+    "prompts": "^2.4.2",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/prompts": "^2.4.9",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-safe-area-context": ">=4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
