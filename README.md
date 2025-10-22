@@ -152,13 +152,33 @@ import { BottomSheet } from './components/bottom-sheet';
 
 ## How It Works
 
-FlowerUI works by copying component source code directly into your project. This means:
+FlowerUI works by **copying component source code directly into your project** (not installing as npm packages). This means:
 
 1. **Full Control**: The code is yours to modify
 2. **No Black Box**: See exactly what's happening
 3. **No Version Lock**: Update components independently
 4. **Tree Shaking**: Only bundle what you use
 5. **Easy Customization**: Modify styles and behavior as needed
+
+### What Gets Installed?
+
+When you run `npx @poovarasan4046/flowerui@latest add bottom-sheet`:
+
+✅ **Copies** the component source file to `components/bottom-sheet.tsx`  
+✅ **Shows** installation commands for missing dependencies  
+❌ **Does NOT** auto-install React Native or peer dependencies  
+
+### What You Need to Install
+
+You need to manually install peer dependencies when prompted:
+
+```bash
+# The CLI will show you this command if dependencies are missing
+npx expo install react-native-safe-area-context
+
+# Or for bare React Native:
+npm install react-native-safe-area-context
+```
 
 ## Development
 

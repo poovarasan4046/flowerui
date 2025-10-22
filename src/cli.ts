@@ -84,12 +84,22 @@ program
         if (peerMissing.length > 0) {
           console.log(
             chalk.yellow(
-              `\n⚠️  Missing peer dependencies: ${peerMissing.join(", ")}`
+              `\n⚠️  Missing peer dependencies detected!`
+            )
+          );
+          console.log(chalk.cyan("\nRequired packages:"));
+          peerMissing.forEach(dep => {
+            console.log(chalk.dim(`  • ${dep}`));
+          });
+          console.log(
+            chalk.green(
+              `\n📦 Install with:\n   ${chalk.bold(`npx expo install ${peerMissing.join(" ")}`)}`
             )
           );
           console.log(
             chalk.dim(
-              `Install them with: npx expo install ${peerMissing.join(" ")}`
+              "\nOr if using bare React Native:\n   " + 
+              chalk.bold(`npm install ${peerMissing.join(" ")}`)
             )
           );
 
