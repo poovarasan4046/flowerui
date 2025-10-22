@@ -1,6 +1,6 @@
 {
   "name": "@poovarasan4046/flowerui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Beautiful UI components for Expo React Native - Install with CLI like shadcn/ui",
   "main": "dist/index.js",
   "bin": {
